@@ -219,5 +219,9 @@ namespace bruh {
     export function getRecordingBuffer(): Buffer {
         return getBuffer();
     }
+    //% block
+    export function testBlock(): void {
+
+    }
 
 }
