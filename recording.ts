@@ -232,5 +232,13 @@ namespace test {
     export function testBlock(): void {
 
     }
+    /**
+     * Another test function
+     */
+    //% blockId=bruh-test2
+    //% block="another test block"
+    export function testBlock2(): void {
+
+    }
 
 }
