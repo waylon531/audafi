@@ -118,7 +118,6 @@ Buffer getBuffer() {
     if (recording->canPull()) {
         ManagedBuffer data = recording->pull();
         auto newBuf = mkBuffer(data->getBytes(),data->length);
-        
         return newBuf;
     } else {
         return mkBuffer(NULL,0);

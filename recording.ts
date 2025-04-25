@@ -94,6 +94,16 @@ namespace record {
     }
 
     /**
+     * Get the recorded audio buffer
+     */
+    //% block="get audio buffer"
+    //% blockId="record_getBuffer"
+    //% weight=30
+    export function getRecordingBuffer(): Buffer {
+        return getBuffer();
+    }
+
+    /**
      * Record an audio clip for a maximum of 3 seconds
      */
     //% block="record audio clip $mode"
@@ -132,9 +142,6 @@ namespace record {
     export function stopRecording(): void {
     }
 
-    //% shim=record::getBuffer
-    export function getBuffer(): Buffer {
-    }
 
     export function eraseRecording(): void {
         _recordingPresent = false;
