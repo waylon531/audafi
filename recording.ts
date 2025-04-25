@@ -219,7 +219,11 @@ namespace bruh {
     export function getRecordingBuffer(): Buffer {
         return getBuffer();
     }
-    //% block
+    /**
+     * Test function
+     */
+    //% blockId=bruh-test
+    //% block="test block"
     export function testBlock(): void {
 
     }
