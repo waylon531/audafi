@@ -93,15 +93,6 @@ namespace record {
         return !audioIsPlaying();
     }
 
-    /**
-     * Get the recorded audio buffer
-     */
-    //% block="get audio buffer"
-    //% blockId="record_getBuffer"
-    //% weight=30
-    export function getRecordingBuffer(): Buffer {
-        return getBuffer();
-    }
 
     /**
      * Record an audio clip for a maximum of 3 seconds
@@ -217,4 +208,16 @@ namespace record {
                 break;
         }
     }
+}
+namespace bruh {
+    /**
+     * Get the recorded audio buffer
+     */
+    //% block="get audio buffer"
+    //% blockId="record_getBuffer"
+    //% weight=30
+    export function getRecordingBuffer(): Buffer {
+        return getBuffer();
+    }
+
 }
